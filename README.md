@@ -45,47 +45,27 @@ O projeto usa **Git** para controle de versão, e arquivos temporários, como pa
 
 Certifique-se de sempre executar `git status` para verificar se o controle de versão está funcionando corretamente e os arquivos indesejados estão sendo ignorados.
 
-## **Instruções para Contribuição**
+## **Divisão de Responsabilidades**
 
-Este é um projeto colaborativo! Se você deseja contribuir para o desenvolvimento, siga as etapas abaixo:
+### **Pessoa 1: Designer e Cenários**
+- Criar e detalhar o cenário inicial (vila, área aberta, entrada da dungeon).
+- Posicionar obstáculos e NPCs no mapa.
+- Configurar iluminação e atmosfera do jogo.
+- Refinar a dungeon com detalhes visuais simples.
 
-1. **Fork** o repositório.
-2. Crie uma nova branch para as suas alterações.
-    ```bash
-    git checkout -b nome-da-branch
-    ```
-3. Faça suas alterações.
-4. Adicione e faça commit das alterações.
-    ```bash
-    git add .
-    git commit -m "Descrição das alterações"
-    ```
-5. Envie suas alterações para o repositório remoto.
-    ```bash
-    git push origin nome-da-branch
-    ```
-6. Crie um **Pull Request** para revisão das alterações.
+### **Pessoa 2: Jogabilidade e Combate**
+- Desenvolver movimentação do jogador: andar, correr, esquivar.
+- Implementar sistema de combate: ataques leves, pesados e hitboxes.
+- Ajustar animações para fluidez no combate e movimentação.
+- Criar feedback visual (efeitos para ataques e impacto).
 
-## **Desenvolvimento**
+### **Pessoa 3: IA e Interações**
+- Desenvolver IA básica: perseguição e ataques dos inimigos.
+- Refinar inimigos para comportamentos ágeis (ex.: desviar, atacar à distância).
+- Criar sistema de diálogo e interação com NPCs.
+- Desenvolver lógica de missão: (Exemplo: 'Fale com NPC -> derrote inimigo na dungeon -> volte para concluir a missão').
 
-### **Divisão de Tarefas**
-
-- **Pessoa 1 (Designer/Programador):**
-  - Pesquisa e implementação do sistema de combate (movimentação, rolar, desviar, ataques).
-  - Criação e implementação dos inimigos ágeis com IA para combate.
-  - Pesquisa e implementação de animações (movimentação, ataques, rolar).
-  
-- **Pessoa 2 (Programador):**
-  - Pesquisa e implementação do sistema de NPCs e missões simples.
-  - Criação do cenário inicial com uma pequena vila, caverna ou dungeon.
-  - Implementação da lógica de interação do jogador com o cenário e NPCs.
-  
-- **Pessoa 3 (Programador):**
-  - Implementação do sistema de controle de versão com Git e Unity.
-  - Criação de scripts auxiliares para gerenciar o estado do jogo (início, derrota, vitória).
-  - Otimização do projeto para garantir que ele funcione bem em diversas plataformas.
-
-### **Fases do Projeto:**
+## **Fases do Projeto:**
 
 1. **Fase 1: Configuração inicial do projeto**
    - Criação do projeto no Unity.
